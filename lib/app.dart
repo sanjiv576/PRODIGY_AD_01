@@ -1,3 +1,5 @@
+import 'provider/is_dark_theme.dart';
+
 import 'routes/app_routes.dart';
 import 'themes/app_theme.dart';
 import 'package:flutter/material.dart';
@@ -8,9 +10,10 @@ class AppView extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    bool isDark = ref.watch(isDarkThemeProvider);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: AppTheme.appLightTheme(),
+      theme: isDark ? AppTheme.appDarkTheme() : AppTheme.appLightTheme(),
       initialRoute: AppRoutes.homeRoute,
       routes: AppRoutes.getAppRoutes(),
     );

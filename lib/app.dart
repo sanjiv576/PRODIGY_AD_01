@@ -14,7 +14,7 @@ class AppView extends ConsumerWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: isDark ? AppTheme.appDarkTheme() : AppTheme.appLightTheme(),
-      initialRoute: AppRoutes.homeRoute,
+      initialRoute: AppRoutes.splashRoute,
       routes: AppRoutes.getAppRoutes(),
     );
   }

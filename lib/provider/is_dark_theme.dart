@@ -1,5 +1,6 @@
-import '../shared_prefs/app_theme_prefs.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../shared_prefs/app_theme_prefs.dart';
 
 final isDarkThemeProvider = StateNotifierProvider<IsDarkTheme, bool>(
     (ref) => IsDarkTheme(ref.watch(appThemePrefsProvider)));

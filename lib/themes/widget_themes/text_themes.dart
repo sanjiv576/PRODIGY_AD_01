@@ -6,7 +6,7 @@ class KTextThemes {
   static TextTheme lightTextThemes() {
     return const TextTheme(
       titleLarge: TextStyle(
-        fontSize: 40,
+        fontSize: 45,
         letterSpacing: 1.5,
         color: KColors.lightTextColor,
         fontWeight: FontWeight.normal,
@@ -40,14 +40,8 @@ class KTextThemes {
 
   static TextTheme darkTextThemes() {
     return const TextTheme(
-      headlineLarge: TextStyle(
-        fontSize: 96,
-        letterSpacing: 1.5,
-        color: KColors.darkTextColor,
-        fontWeight: FontWeight.normal,
-      ),
       titleLarge: TextStyle(
-        fontSize: 40,
+        fontSize: 45,
         letterSpacing: 1.5,
         color: KColors.darkTextColor,
         fontWeight: FontWeight.normal,
